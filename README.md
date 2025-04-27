@@ -19,6 +19,24 @@ Built with ❤️ using Flask, YOLOv8, Mediapipe, OpenCV, and custom augmentatio
 - 🏋️ Fine-tune a YOLOv8 model (`best_naruto_signs_7.pt`) for hand sign classification.
 - 📈 Train with optimized parameters for small datasets.
 
+  ---
+
+## 🛠️ Notebook Pipeline Overview
+
+Here’s the full training pipeline from data to deployment:
+
+![Notebook Pipeline]([./notebooks/Notebook_Pipeline_Naruto_Trainer.png](https://i.imgur.com/jmgOJBn.jpeg))
+
+✅ Load Dataset  
+✅ Augment Data (Flip, Color, Scale)  
+✅ Format for YOLOv8  
+✅ Configure and Train Model  
+✅ Evaluate and Export Best Model  
+✅ Deploy to Flask WebApp
+
+---
+
+
 ### 🖥️ Web Application Features
 
 - 🖐️ Real-time Hand Sign Detection using YOLOv8 and Mediapipe.
