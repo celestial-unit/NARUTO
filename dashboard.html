@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Naruto Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="logo">
+                <img src="images/neon-leaf.png" alt="Neon Leaf Symbol">
+                <div class="logo-text">NEON<span>NINJA</span></div>
+            </div>
+            <div class="user-info">
+                <div class="role-badge chunin-badge">
+                    <i class="fas fa-bolt"></i> CHUNIN
+                </div>
+                <img src="images/naruto-avatar.jpg" alt="User Avatar" class="user-avatar">
+                <span class="username">UZUMAKI</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="dashboard-grid">
+            <!-- Sidebar -->
+            <nav class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a href="#" class="active"><i class="fas fa-scroll"></i> Missions</a></li>
+                    <li><a href="#"><i class="fas fa-fire"></i> Jutsu Training</a></li>
+                    <li><a href="#"><i class="fas fa-trophy"></i> Leaderboard</a></li>
+                    <li><a href="#"><i class="fas fa-tower-broadcast"></i> Notices</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Team</a></li>
+                    <li><a href="#"><i class="fas fa-id-card"></i> Profile</a></li>
+                    <li><a href="#"><i class="fas fa-chart-line"></i> Stats</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main Panel -->
+            <main class="main-panel">
+                <!-- Mission Board -->
+                <section class="mission-board">
+                    <h2><i class="fas fa-scroll"></i> MISSION BOARD</h2>
+                    <div class="mission-cards">
+                        <div class="mission-card">
+                            <div class="mission-rank rank-d">D</div>
+                            <h3>Village Patrol</h3>
+                            <p>Guard the village gates from 0800-1200</p>
+                            <div class="mission-meta">
+                                <span class="mission-reward">500 <i class="fas fa-coins"></i></span>
+                                <span class="mission-status available">AVAILABLE</span>
+                            </div>
+                        </div>
+                        <div class="mission-card">
+                            <div class="mission-rank rank-c">C</div>
+                            <h3>Bandit Hunt</h3>
+                            <p>Eliminate bandits near River Country</p>
+                            <div class="mission-meta">
+                                <span class="mission-reward">1500 <i class="fas fa-coins"></i></span>
+                                <span class="mission-status in-progress">IN PROGRESS</span>
+                            </div>
+                        </div>
+                        <div class="mission-card">
+                            <div class="mission-rank rank-b">B</div>
+                            <h3>Escort Mission</h3>
+                            <p>Protect client to Sand Village</p>
+                            <div class="mission-meta">
+                                <span class="mission-reward">3000 <i class="fas fa-coins"></i></span>
+                                <span class="mission-status completed">COMPLETED</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Training Section -->
+                <section class="training-section">
+                    <h2><i class="fas fa-fire"></i> JUTSU TRAINING</h2>
+                    <div class="jutsu-cards">
+                        <div class="jutsu-card">
+                            <div class="jutsu-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <h3>RASENGAN</h3>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 65%"></div>
+                                </div>
+                                <span class="progress-text">65%</span>
+                            </div>
+                        </div>
+                        <div class="jutsu-card">
+                            <div class="jutsu-icon">
+                                <i class="fas fa-clone"></i>
+                            </div>
+                            <h3>SHADOW CLONE</h3>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 90%"></div>
+                                </div>
+                                <span class="progress-text">90%</span>
+                            </div>
+                        </div>
+                        <div class="jutsu-card">
+                            <div class="jutsu-icon">
+                                <i class="fas fa-mask"></i>
+                            </div>
+                            <h3>TRANSFORMATION</h3>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 100%"></div>
+                                </div>
+                                <span class="progress-text">MASTERED</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Leaderboard Section -->
+                <section class="leaderboard-section">
+                    <h2><i class="fas fa-trophy"></i> SHINOBI LEADERBOARD</h2>
+                    <div class="leaderboard-container">
+                        <div class="leaderboard-header">
+                            <span>RANK</span>
+                            <span>NINJA</span>
+                            <span>VILLAGE</span>
+                            <span>POINTS</span>
+                        </div>
+                        <div class="leaderboard-list">
+                            <!-- Top 3 with special styling -->
+                            <div class="leaderboard-item top-1">
+                                <span class="rank">1</span>
+                                <div class="ninja-info">
+                                    <img src="images/hokage-avatar.jpg" alt="Hokage" class="ninja-avatar">
+                                    <span class="ninja-name">HOKAGE</span>
+                                </div>
+                                <span class="village">LEAF</span>
+                                <span class="points">12,450 <i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="leaderboard-item top-2">
+                                <span class="rank">2</span>
+                                <div class="ninja-info">
+                                    <img src="images/sasuke-avatar.jpg" alt="Sasuke" class="ninja-avatar">
+                                    <span class="ninja-name">SASUKE</span>
+                                </div>
+                                <span class="village">LEAF</span>
+                                <span class="points">10,890 <i class="fas fa-star"></i></span>
+                            </div>
+                            <div class="leaderboard-item top-3">
+                                <span class="rank">3</span>
+                                <div class="ninja-info">
+                                    <img src="images/sakura-avatar.jpg" alt="Sakura" class="ninja-avatar">
+                                    <span class="ninja-name">SAKURA</span>
+                                </div>
+                                <span class="village">LEAF</span>
+                                <span class="points">9,750 <i class="fas fa-star"></i></span>
+                            </div>
+                            <!-- Current user highlighted -->
+                            <div class="leaderboard-item current-user">
+                                <span class="rank">7</span>
+                                <div class="ninja-info">
+                                    <img src="images/naruto-avatar.jpg" alt="Naruto" class="ninja-avatar">
+                                    <span class="ninja-name">UZUMAKI</span>
+                                </div>
+                                <span class="village">LEAF</span>
+                                <span class="points">7,320 <i class="fas fa-star"></i></span>
+                            </div>
+                            <!-- Other ninja -->
+                            <div class="leaderboard-item">
+                                <span class="rank">4</span>
+                                <div class="ninja-info">
+                                    <img src="images/kakashi-avatar.jpg" alt="Kakashi" class="ninja-avatar">
+                                    <span class="ninja-name">KAKASHI</span>
+                                </div>
+                                <span class="village">LEAF</span>
+                                <span class="points">9,200 <i class="fas fa-star"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Profile Section -->
+                <section class="profile-section">
+                    <h2><i class="fas fa-id-card"></i> NINJA PROFILE</h2>
+                    <div class="profile-container">
+                        <div class="profile-header">
+                            <img src="images/naruto-avatar.jpg" alt="Naruto" class="profile-avatar">
+                            <div class="profile-title">
+                                <h3>UZUMAKI NARUTO</h3>
+                                <div class="profile-rank chunin-badge">
+                                    <i class="fas fa-bolt"></i> CHUNIN
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-stats">
+                            <div class="stat-item">
+                                <div class="stat-label">VILLAGE</div>
+                                <div class="stat-value">HIDDEN LEAF</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">TEAM</div>
+                                <div class="stat-value">TEAM 7</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">SENSEI</div>
+                                <div class="stat-value">KAKASHI</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-label">MISSIONS</div>
+                                <div class="stat-value">47</div>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-progress">
+                            <h4>NEXT RANK: JONIN</h4>
+                            <div class="progress-container">
+                                <div class="progress-bar">
+                                    <div class="progress" style="width: 45%"></div>
+                                </div>
+                                <span class="progress-text">45%</span>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-skills">
+                            <h4>SPECIALTIES</h4>
+                            <div class="skills-list">
+                                <span class="skill-badge"><i class="fas fa-clone"></i> Shadow Clone</span>
+                                <span class="skill-badge"><i class="fas fa-sun"></i> Rasengan</span>
+                                <span class="skill-badge"><i class="fas fa-fist-raised"></i> Taijutsu</span>
+                                <span class="skill-badge"><i class="fas fa-wind"></i> Wind Style</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

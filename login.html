@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konoha Login</title>
+    <link rel="stylesheet" href="css/auth.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="ninja-background"></div>
+    
+    <div class="auth-container">
+        <div class="leaf-village-logo">
+            <img src="images/leaf-symbol.png" alt="Hidden Leaf Village" class="logo-spin">
+            <h1>KONOHA GATE</h1>
+        </div>
+
+        <form class="auth-form slide-up">
+            <h2>SHINOBI LOGIN</h2>
+            
+            <div class="input-group">
+                <i class="fas fa-user-ninja"></i>
+                <input type="text" placeholder="Shinobi ID" required>
+                <span class="focus-border"></span>
+            </div>
+            
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Secret Jutsu" required>
+                <span class="focus-border"></span>
+            </div>
+            
+            <button type="submit" class="btn-ninja">
+                <span>ENTER VILLAGE</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+            
+            <div class="auth-footer">
+                <p>New to the village? <a href="signup.html">Become a Shinobi</a></p>
+                <a href="#" class="forgot-link">Forgot your jutsu?</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="shuriken-animation">
+        <img src="images/shuriken.png" class="shuriken spin">
+        <img src="images/shuriken.png" class="shuriken spin reverse">
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

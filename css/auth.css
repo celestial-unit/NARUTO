@@ -1,0 +1,345 @@
+:root {
+    /* Naruto Color Theme */
+    --primary-orange: #FF8C00;
+    --primary-glow: rgba(255, 140, 0, 0.3);
+    --konoha-blue: #4169E1;
+    --akatsuki-red: #D2232A;
+    --scroll-beige: #F5F5DC;
+    --dark-bg: #1A1106;
+    
+    /* Team Colors */
+    --team-7: #4CAF50;  /* Team 7 green */
+    --team-8: #9C27B0;  /* Team 8 purple */
+    --team-10: #FF9800; /* Team 10 orange */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark-bg);
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.ninja-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 20% 30%, var(--primary-glow) 0%, transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(65, 105, 225, 0.3) 0%, transparent 25%),
+        url('../images/konoha-wallpaper.jpg') center/cover no-repeat;
+    z-index: -1;
+    animation: pulseBackground 15s infinite alternate;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.leaf-village-logo {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeInDown 1s ease;
+}
+
+.leaf-village-logo img {
+    height: 100px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 10px var(--primary-orange));
+}
+
+.leaf-village-logo h1 {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 0 10px var(--primary-orange);
+    letter-spacing: 3px;
+}
+
+.auth-form {
+    background: rgba(26, 17, 6, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-top: 3px solid var(--primary-orange);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-orange), var(--akatsuki-red));
+    animation: borderFlow 3s linear infinite;
+}
+
+.auth-form h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary-orange);
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-orange);
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    border-bottom-color: var(--primary-orange);
+}
+
+.input-group input:focus ~ .focus-border {
+    width: 100%;
+}
+
+.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-orange);
+    transition: width 0.4s;
+}
+
+.btn-ninja {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, var(--primary-orange), var(--akatsuki-red));
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+}
+
+.btn-ninja:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 140, 0, 0.6);
+}
+
+.btn-ninja i {
+    transition: transform 0.3s;
+}
+
+.btn-ninja:hover i {
+    transform: translateX(5px);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+.auth-footer a {
+    color: var(--primary-orange);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+    text-shadow: 0 0 5px var(--primary-orange);
+}
+
+.forgot-link {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Team Selection */
+.team-selection {
+    margin: 25px 0;
+}
+
+.team-selection h3 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.team-options {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.team-options label {
+    flex: 1;
+}
+
+.team-card {
+    display: block;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+}
+
+.team-options input:checked + .team-card {
+    border-color: var(--primary-orange);
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.team-7 {
+    color: var(--team-7);
+}
+
+.team-8 {
+    color: var(--team-8);
+}
+
+.team-10 {
+    color: var(--team-10);
+}
+
+.team-card i {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+/* Shuriken Animation */
+.shuriken-animation {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.shuriken {
+    position: absolute;
+    width: 50px;
+    opacity: 0.7;
+    filter: drop-shadow(0 0 5px var(--primary-orange));
+}
+
+.shuriken.spin {
+    animation: spin 15s linear infinite;
+}
+
+.shuriken.reverse {
+    animation-direction: reverse;
+}
+
+.shuriken:nth-child(1) {
+    top: 20%;
+    left: 10%;
+}
+
+.shuriken:nth-child(2) {
+    bottom: 15%;
+    right: 10%;
+}
+
+/* Animations */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes borderFlow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+@keyframes pulseBackground {
+    0% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+@keyframes logo-spin {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-form {
+        padding: 30px 20px;
+    }
+    
+    .team-options {
+        flex-direction: column;
+    }
+}

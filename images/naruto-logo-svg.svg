@@ -1,0 +1,9 @@
+<svg viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .logo-text { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 24px; letter-spacing: 1px; }
+    .naruto-text { fill: #FFFFFF; }
+    .verse-text { fill: #FFA500; }
+  </style>
+  <text x="10" y="35" class="logo-text naruto-text">NARUTO</text>
+  <text x="124" y="35" class="logo-text verse-text">VERSE</text>
+</svg>
