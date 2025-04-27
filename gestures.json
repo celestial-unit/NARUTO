@@ -1,0 +1,262 @@
+[
+    {
+        "gesture": "Horse",
+        "timestamp": 1745730738.6986725
+    },
+    {
+        "gesture": "Horse",
+        "timestamp": 1745730738.835802
+    },
+    {
+        "gesture": "Horse",
+        "timestamp": 1745730738.9113193
+    },
+    {
+        "gesture": "Horse",
+        "timestamp": 1745730738.9123185
+    },
+    {
+        "gesture": "Horse",
+        "timestamp": 1745730739.8658268
+    },
+    {
+        "gesture": "Horse",
+        "timestamp": 1745730739.9403572
+    },
+    {
+        "gesture": "Horse",
+        "timestamp": 1745730740.0060806
+    },
+    {
+        "gesture": "Horse",
+        "timestamp": 1745730740.0794108
+    },
+    {
+        "gesture": "Horse",
+        "timestamp": 1745730740.1497095
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.230914
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.3166134
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.3930058
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.4634304
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.5326355
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.6052532
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.6700172
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.748919
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.8261147
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.8991342
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730740.964983
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.0290852
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.0945425
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.1612384
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.2286086
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.3002803
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.3678818
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.4357338
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.4949937
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.5586429
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.621707
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.7032073
+    },
+    {
+        "gesture": "Horse",
+        "timestamp": 1745730741.768896
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.828045
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.8970828
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730741.9688256
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730742.0278447
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730742.0945642
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730742.1602485
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730742.2299001
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730742.3013299
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730742.496272
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730743.0614502
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730743.1459472
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730743.2129226
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730743.2951162
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730743.3805711
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730744.071984
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730744.4193933
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730744.5160952
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730744.5840235
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730744.6783407
+    },
+    {
+        "gesture": "Dragon",
+        "timestamp": 1745730744.7633536
+    },
+    {
+        "gesture": "Serpent",
+        "timestamp": 1745730758.0847976
+    },
+    {
+        "gesture": "Tiger",
+        "timestamp": 1745730779.1113756
+    },
+    {
+        "gesture": "Tiger",
+        "timestamp": 1745730786.8807614
+    },
+    {
+        "gesture": "Serpent",
+        "timestamp": 1745730790.221024
+    },
+    {
+        "gesture": "Monkey",
+        "timestamp": 1745730794.0284233
+    },
+    {
+        "gesture": "Monkey",
+        "timestamp": 1745730796.3601654
+    },
+    {
+        "gesture": "Hare",
+        "timestamp": 1745730801.5229897
+    },
+    {
+        "gesture": "Bird",
+        "timestamp": 1745730808.2626011
+    },
+    {
+        "gesture": "Boar",
+        "timestamp": 1745730816.5349126
+    },
+    {
+        "gesture": "Ram",
+        "timestamp": 1745730830.414112
+    },
+    {
+        "gesture": "Ram",
+        "timestamp": 1745730832.527539
+    },
+    {
+        "gesture": "Ram",
+        "timestamp": 1745730838.9971337
+    },
+    {
+        "gesture": "Rat",
+        "timestamp": 1745730844.7393413
+    }
+]

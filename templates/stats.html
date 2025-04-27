@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naruto Trainer Stats</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        table {
+            margin: auto;
+            font-size: 20px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>📈 Your Ninja Progress 📈</h1>
+
+<table>
+    <tr>
+        <th>Jutsu</th>
+        <th>Successes</th>
+        <th>Failures</th>
+        <th>Average Time (sec)</th>
+        <th>Mastery Level</th>
+    </tr>
+    {% for jutsu, data in stats.items() %}
+    <tr>
+        <td>{{ jutsu }}</td>
+        <td>{{ data.success }}</td>
+        <td>{{ data.failures }}</td>
+        <td>
+            {% if data.times %}
+                {{ "%.2f"|format(data.times|sum / data.times|length) }}
+            {% else %}
+                -
+            {% endif %}
+        </td>
+        <td>{{ data.mastery }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+<a href="/menu" style="color: orange; font-size: 24px;">⬅️ Back to Menu</a>
+
+</body>
+</html>

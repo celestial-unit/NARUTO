@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Naruto Jutsu Trainer</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        #video-container {
+            position: relative;
+            display: inline-block;
+        }
+        #reset-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 10;
+            transition: 0.3s;
+        }
+        #reset-btn:hover {
+            background-color: #e64a19;
+            box-shadow: 0 0 15px #ff9800;
+        }
+    </style>
+</head>
+<body>
+
+<h1>🔥 Naruto Hand Sign Trainer 🔥</h1>
+
+<div id="video-container">
+    <button id="reset-btn" onclick="resetSequence()">Reset</button>
+    <img src="{{ url_for('video_feed') }}" width="960" height="720">
+</div>
+
+<script>
+    function resetSequence() {
+        fetch('/reset', { method: 'POST' })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = "/menu"; // Go back to Menu cleanly
+                } else {
+                    alert("Reset failed!");
+                }
+            })
+            .catch(error => {
+                alert("Error: " + error);
+            });
+    }
+</script>
+
+</body>
+</html>

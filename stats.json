@@ -1,0 +1,29 @@
+{
+    "Chidori": {
+        "success": 0,
+        "failures": 1,
+        "times": [],
+        "mastery": "Unranked"
+    },
+    "Shadow Clone Jutsu": {
+        "success": 5,
+        "failures": 0,
+        "times": [
+            14.362790584564209,
+            7.209742069244385,
+            21.32707929611206,
+            3.817784547805786,
+            8.240200757980347
+        ],
+        "mastery": "Master"
+    },
+    "Body Flicker Jutsu": {
+        "success": 2,
+        "failures": 4,
+        "times": [
+            4.774044513702393,
+            3.702298641204834
+        ],
+        "mastery": "Novice"
+    }
+}
